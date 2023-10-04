@@ -1,2 +1,2 @@
 # github.io
-Cool Motivational Blog created fro blogger
+Cool Motivational Blog created from blogger
