@@ -245,7 +245,7 @@ section.about-us p.abt {
 /*-- service section --*/
 section.our-services {
 	padding:100px 0;
-	background:url(../blob/cherubimq-patch-3/service.jpg) no-repeat;
+	background:url(../raw.githubusercontent.com/cherubimq/github.io/cherubimq-patch-5/gallery.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size:100% 100%;
@@ -323,7 +323,7 @@ section.our-skills p.text-center {
 /*-- gallery section --*/
 section.our-gallery {
 	padding:100px 0;
-	background:url(../blob/cherubimq-patch-3/gallery.jpg) no-repeat;
+	background:url(../raw.githubusercontent.com/cherubimq/github.io/cherubimq-patch-5/service.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size:100% 100%;
@@ -466,7 +466,7 @@ section.map iframe.googlemaps {
 /*-- contact section --*/
 section.contact-us {
 	padding:100px 0;	
-	background:url(../blob/cherubimq-patch-3/contact.jpg) no-repeat;
+	background:url(../raw.githubusercontent.com/cherubimq/github.io/cherubimq-patch-5/contact.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size:100% 100%;
@@ -682,7 +682,7 @@ footer .footer-below  p a:hover {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: rgba(0, 0, 0, 0.4) url(../php/cd-top-arrow.svg) no-repeat center 50%;
+  background: rgba(0, 0, 0, 0.4) url(../raw.githubusercontent.com/cherubimq/github.io/cherubimq-patch-5/cd-top-arrow.svg) no-repeat center 50%;
   background-size:60%;
   border:1px solid #fff;
   visibility: hidden;
