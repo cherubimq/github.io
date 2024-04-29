@@ -1,2 +1,2 @@
 # github.io
-Cool Motivational Blog created from blogger with javascripts css html
+Cool Motivational Website created  with javascripts css html
