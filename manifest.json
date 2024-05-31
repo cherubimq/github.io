@@ -1,0 +1,21 @@
+{
+  "short_name": "cherubimq",
+  "name": "OpenGPT Discover Space",
+  "icons": [
+    {
+      "src": "https://ko-fi.com/favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://ko-fi.com/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://cherubimq.github.io/github.io/index.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "https://cherubimq.github.io/github.io/",
+  "theme_color": "#3367D6"
+}
