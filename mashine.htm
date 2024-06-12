@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CHERUBIM SEARCH MACHINE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="keywords" content="Cherubim AI,Search, Engine,hacker book,Data Science">
+            <meta name="description" content="AI Search Engine,mashine tool,osint.">
+<link rel="icon" type="image/png" size="32" href="https://cdn-icons-png.flaticon.com/128/16674/16674439.png">            
+<style>
+body{
+  font-family: sans-serif, serif;
+}
+header{
+  background:#eeaeca;
+  padding:20px 0;
+  border-radius: 10px;
+box-shadow: 0 0 5px #1d2cfd;
+}
+.meniu{
+  margin:0;
+  padding:0;
+}
+.meniu ul li {
+  list-style-type:none;
+  display:inline;
+}
+
+.meniu ul li a {
+  border: 1px solid #1d2cfd;
+  box-shadow: 0 0 5px #6565ff;
+  background: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 2px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  color:blue;
+  font-weight:600;
+  line-height:48px;
+}
+.meniu ul li a:hover {
+  background:#1D2CFD;
+  color:#fff;
+}
+
+.meniu ul li.active a{
+border: 1px solid #ee0000;
+box-shadow: 0 0 5px #ff5151;
+background: none;
+padding: 10px 15px;
+font-size: 15px;
+cursor: pointer;
+margin: 2px;
+transition: 0.8s;
+position: relative;
+overflow: hidden;
+border-radius: 20px;
+}
+
+.meniu ul li.active a:hover{
+   background:#1D2CFD;
+   color:#fff;
+}
+body{font-family:Arial,sans-serif;margin:0;padding:0;background:#eeaeca;background:radial-gradient(circle,rgba(238,174,202,1) 0,rgba(148,187,233,1) 100%)}
+</style>
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+ <style>
+      }
+
+div.c {
+  font-size: 150%;
+}
+.intro{
+position:fixed;
+left:0;
+top:0;
+layer-background-color:darkred;
+background-color:darkred;
+border:0.1px solid darkred;
+z-index:9;
+}
+
+    </style>
+</head>
+<body>
+<header>
+  <div class="meniu">
+    <ul>
+      <li class="active"><a href="https://t.co/xDtOapmf9C">Website Creation</a></li>
+      <li><a href="https://cherubimq.github.io/github.io/cyb.html">Hacker Book</a></li>
+      <li><a href="https://cherubimq.github.io/github.io/pred.html">Universe Database</a></li>
+      <li><a href="https://t.co/YqF0Kkf0dm">ChatGPT Free</a></li>
+      <li><a href="https://cherubimq.github.io/github.io/tech.html"> Data Science</a></li>
+      <li><a href="https://t.co/KiQGIp9Vfl">Make Money With AI</a></li>
+      <li><a href="https://cdn2.me-qr.com/html/22756879.html">Contact</a></li>
+    </ul>
+  </div>
+  
+</header>
+<script>
+
+function netsearch(formname) 
+
+{
+   var a1
+   var a2
+   var b1
+   var b2
+   var c1
+   var c2
+   var d1
+   var d2
+   var e1
+   var e2
+   var f1
+   var f2
+   var g1
+   var g2
+   var plus
+   var TEXT
+   var noENGINE
+   var haveTEXT
+
+
+   
+   TEXT=formname.TEXT.value;
+
+   noEngine=true;
+   haveTEXT=true;
+   plus=""
+
+   if (TEXT=="")
+   {
+   alert("Please type in some text!")
+   haveTEXT=false
+   }
+      else
+	  {
+	  for (var i=0; i < TEXT.length; i++)
+	     {
+         if (TEXT.charAt(i)==" ")
+	        {
+            plus+="%20"
+            }
+	     else
+	        {
+            plus += TEXT.charAt(i)
+	        }
+         }
+      }
+   
+TEXT=plus
+
+
+   //ALTAVISTA
+   a1=formname.altavista.checked;
+  
+   a2="https://metager.org/meta/meta.ger3?eingabe="+TEXT; 
+     if (a1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(a2, "av","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }
+   
+   //EXCITE
+   b1=formname.excite.checked;
+   b2="https://www.phind.com/search?q="+TEXT;  
+     if (b1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(b2, "e","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }  
+
+   //HOTBOT
+   c1=formname.hotbot.checked;
+  
+   c2="https://www.ecosia.org/search?q="+TEXT+"&DV=7&RG=.com&DC=10&DE=2&OPs=MDRTP&_v=2&DU=days&SW=web&search.x=23&search.y=8";
+     if (c1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(c2, "h","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }  
+    
+   //INFOSEEK
+   d1=formname.infoseek.checked;
+  
+   d2="https://duckduckgo.com/?t=ffab&q="+TEXT+"&col=WW&sv=IS&lk=noframes&nh=10";
+     if (d1)
+       {
+       noEngine=false
+       if (haveTEXT)
+	     {
+         newWindow=window.open(d2, "i", "toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }  
+    
+   //LYCOS
+   e1=formname.lycos.checked;
+  
+   e2="https://www.perplexity.ai/search?q="+TEXT+"&matchmode=and&cat=perplexity&x=33&y=10";
+     if (e1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(e2, "l","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }  
+
+   //WEBCRAWLER
+   f1=formname.webcrawler.checked;
+   f2="https://www.webcrawler.com/serp?q="+TEXT;
+     if (f1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(f2, "w","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }       
+
+   //YAHOO
+   g1=formname.yahoo.checked;
+   g2="https://you.com/search?q="+TEXT;
+     if (g1)
+       {
+       noEngine=false
+       if (haveTEXT)
+         {
+         newWindow=window.open(g2, "y","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
+         }
+       }  
+
+   //noENGINE
+     if (noEngine)
+       {
+       alert("Please select a search engine!")
+       }  
+
+// END Netsearch
+ 
+}
+
+function getPath(url) {
+
+        lastSlash = url.lastIndexOf("/")
+
+        return url.substring(0, lastSlash + 1)
+
+}
+
+
+
+</script>
+
+<!--
+<h2>
+This search page requires JavaScript to run. Please hit your <strong><i>BACK</i></strong> button and follow the link at the bottom of the page to get the latest version of Internet Explorer.<br /> Thank you.
+</h2>
+-->
+
+<p><br /><div class="meniu">
+<ul><li><a href="https://cherubimq.github.io/github.io/" title="Back to cherubim Int'l"><strong>Cherubim Int'l</strong></a></li></ul></ul>
+  </div> </p>
+<div class="c">
+<form name="engines" onSubmit="netsearch(engines)" method="post">
+    <align="left"><p><strong>The AI Search Engine | AI Chat</strong>
+	<br />
+        
+    1.&nbsp; Enter keyword(s)
+<br />
+    2.&nbsp; Select search engine(s) desired <br />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and click <strong>Search</strong>.
+<br /><br />
+
+<!-- //    <input type="text" size="25" maxlength="200" name="TEXT" value="Enter Keywords Here" onClick="form.TEXT.select()">
+// -->
+<script>
+if (navigator.appName=="Netscape") {
+   document.write("")
+   document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + navigator.appName) 
+   document.write("<br />");
+   document.write("<input type='text' size='25' maxlength='200' name='TEXT' value='Enter Keywords Here' onFocus='form.TEXT.select()'>")
+   document.write("")
+   }
+else {
+   document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + navigator.appName);
+   document.write("<br />");
+   document.write("<input type='text' size='25' maxlength='200' name='TEXT' value='Enter Keywords Here' onClick='form.TEXT.select()'> ");
+    }
+</script>
+
+<br />
+    <input type="checkbox" name="altavista">Meta Vista<br /> 
+    <input type="checkbox" name="excite">AI Search<br />
+    <input type="checkbox" name="hotbot">HotBot<br />
+    <input type="checkbox" name="infoseek" CHECKED>FastGPT<br />
+    <input type="checkbox" name="lycos">Perlexity AI Search<br />
+    <input type="checkbox" name="webcrawler">Webcrawler<br />
+    <input type="checkbox" name="yahoo">Youhoo ChatGPT<br /> <br />  
+    <input type="submit" value="Search">
+
+    <input type="reset" value="Reset"> <br />
+      </p>
+</form>
+  </div>
+<br /><div class="meniu">
+<ul>
+<p align="left">Check the use of your brand or username on 160 Social Networks:<br />
+<li><a href="https://whatsmyname.app/" target="_blank">Checkusernames</a></li><br />
+ <li><a href="https://ko-fi.com/post/Secret-service-OSINT-Tools-Collection-Q5Q1ULRLS" target="_blank">Open Source Resources</a></li><br />
+<li><a href="https://cherubimq.github.io/github.io/book.html" target="_blank">The Book of Life</a></li></ul>
+  </div>   
+<br /><br /><br />
+
+<script>
+<!--
+
+  
+
+   function initArray() {  
+      this.length = initArray.arguments.length
+
+      for (var i = 0; i < this.length; i++)
+
+      this[i+1] = initArray.arguments[i]
+
+   }
+
+
+
+   var DOWArray = new initArray("Sunday","Monday","Tuesday","Wednesday",
+
+                                "Thursday","Friday","Saturday");
+
+   var MOYArray = new initArray("January","February","March","April",
+
+                                "May","June","July","August","September",
+
+                                "October","November","December");
+
+   var LastModDate = new Date(document.lastModified);
+
+   document.write("This page was last updated on ");
+
+   document.write(DOWArray[(LastModDate.getDay()+1)],", ");
+
+   
+   document.write(LastModDate.getDate()," ");
+
+   document.write(MOYArray[(LastModDate.getMonth()+1)],", ",(LastModDate.getYear()+1900));
+
+
+   document.write(".");
+   
+   
+// -->
+</script>
+<br />
+<script>function whatBrowser(){document.Browser.Name.value=navigator.appName,document.Browser.Version.value=navigator.appVersion,document.Browser.Code.value=navigator.appCodeName,document.Browser.Agent.value=navigator.userAgent}window.onload=whatBrowser</script><center><table border><form name=Browser><tr><td>Browser Name:<td><input name=Name size=50 type=txt><tr><td>Browser Version:<td><input name=Version size=50 type=txt><tr><td>Browser Code Name:<td><input name=Code size=50 type=txt><tr><td>User-Agent:<td><input name=Agent size=70 type=txt></form></table></center>
+ <br />
+<div id="i1" class="intro"></div><div id="i2" class="intro"></div>
+<script>
+var speed=20
+var temp=new Array()
+var temp2=new Array()
+
+var clipright=(window.innerWidth)?window.innerWidth/2:document.body.clientWidth/2,clipleft=0
+for (i=1;i<=2;i++){
+temp[i]=document.getElementById("i"+i).style
+temp[i].width=(window.innerWidth)?window.innerWidth/2 + 'px' :document.body.clientWidth/2 + 'px'
+temp[i].height=(window.innerHeight)?window.innerHeight + 'px': document.body.offsetHeight + 'px'
+temp[i].left=(i-1)*parseInt(temp[i].width) + 'px'
+}
+
+
+function openit(){
+
+clipright-=speed
+temp[1].clip="rect(0 "+clipright+"px auto 0)"
+clipleft+=speed
+temp[2].clip="rect(0 auto auto "+clipleft+"px)"
+if (clipright<=0){
+clearInterval(stopit)
+temp[1].display="none"
+temp[2].display="none"
+
+}
+}
+
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo()
+
+</script>
+
+</body>
+</html>
