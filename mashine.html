@@ -114,164 +114,7 @@ z-index:10;
 </header>
 <script>
 
-function netsearch(formname) 
-
-{
-   var a1
-   var a2
-   var b1
-   var b2
-   var c1
-   var c2
-   var d1
-   var d2
-   var e1
-   var e2
-   var f1
-   var f2
-   var g1
-   var g2
-   var plus
-   var TEXT
-   var noENGINE
-   var haveTEXT
-
-
-   
-   TEXT=formname.TEXT.value;
-
-   noEngine=true;
-   haveTEXT=true;
-   plus=""
-
-   if (TEXT=="")
-   {
-   alert("Please type in some text!")
-   haveTEXT=false
-   }
-      else
-	  {
-	  for (var i=0; i < TEXT.length; i++)
-	     {
-         if (TEXT.charAt(i)==" ")
-	        {
-            plus+="%20"
-            }
-	     else
-	        {
-            plus += TEXT.charAt(i)
-	        }
-         }
-      }
-   
-TEXT=plus
-
-
-   //ALTAVISTA
-   a1=formname.altavista.checked;
-  
-   a2="https://metager.org/meta/meta.ger3?eingabe="+TEXT; 
-     if (a1)
-       {
-       noEngine=false
-       if (haveTEXT)
-         {
-         newWindow=window.open(a2, "av","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
-         }
-       }
-   
-   //EXCITE
-   b1=formname.excite.checked;
-   b2="https://www.phind.com/search?q="+TEXT;  
-     if (b1)
-       {
-       noEngine=false
-       if (haveTEXT)
-         {
-         newWindow=window.open(b2, "e","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
-         }
-       }  
-
-   //HOTBOT
-   c1=formname.hotbot.checked;
-  
-   c2="https://www.ecosia.org/search?q="+TEXT+"&DV=7&RG=.com&DC=10&DE=2&OPs=MDRTP&_v=2&DU=days&SW=web&search.x=23&search.y=8";
-     if (c1)
-       {
-       noEngine=false
-       if (haveTEXT)
-         {
-         newWindow=window.open(c2, "h","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
-         }
-       }  
-    
-   //INFOSEEK
-   d1=formname.infoseek.checked;
-  
-   d2="https://duckduckgo.com/?t=ffab&q="+TEXT+"&col=WW&sv=IS&lk=noframes&nh=10";
-     if (d1)
-       {
-       noEngine=false
-       if (haveTEXT)
-	     {
-         newWindow=window.open(d2, "i", "toolbar,location,directories,status,menubar,scrollbars,resizable=1")
-         }
-       }  
-    
-   //LYCOS
-   e1=formname.lycos.checked;
-  
-   e2="https://www.perplexity.ai/search?q="+TEXT+"&matchmode=and&cat=perplexity&x=33&y=10";
-     if (e1)
-       {
-       noEngine=false
-       if (haveTEXT)
-         {
-         newWindow=window.open(e2, "l","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
-         }
-       }  
-
-   //WEBCRAWLER
-   f1=formname.webcrawler.checked;
-   f2="https://searx.be/?q="+TEXT;
-     if (f1)
-       {
-       noEngine=false
-       if (haveTEXT)
-         {
-         newWindow=window.open(f2, "w","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
-         }
-       }       
-
-   //YAHOO
-   g1=formname.yahoo.checked;
-   g2="https://you.com/search?q="+TEXT;
-     if (g1)
-       {
-       noEngine=false
-       if (haveTEXT)
-         {
-         newWindow=window.open(g2, "y","toolbar,location,directories,status,menubar,scrollbars,resizable=1")
-         }
-       }  
-
-   //noENGINE
-     if (noEngine)
-       {
-       alert("Please select a search engine!")
-       }  
-
-// END Netsearch
- 
-}
-
-function getPath(url) {
-
-        lastSlash = url.lastIndexOf("/")
-
-        return url.substring(0, lastSlash + 1)
-
-}
+function netsearch(e){var o,n,a,t,s,r,i,c,l,w;if(l=e.TEXT.value,noEngine=!0,w=!0,c="",""==l)alert("Please type in some text!"),w=!1;else for(var b=0;b<l.length;b++)" "==l.charAt(b)?c+="%20":c+=l.charAt(b);o="https://metager.org/meta/meta.ger3?eingabe="+(l=c),e.altavista.checked&&(noEngine=!1,w&&(newWindow=window.open(o,"av","toolbar,location,directories,status,menubar,scrollbars,resizable=1"))),n="https://www.phind.com/search?q="+l,e.excite.checked&&(noEngine=!1,w&&(newWindow=window.open(n,"e","toolbar,location,directories,status,menubar,scrollbars,resizable=1"))),a="https://www.ecosia.org/search?q="+l+"&DV=7&RG=.com&DC=10&DE=2&OPs=MDRTP&_v=2&DU=days&SW=web&search.x=23&search.y=8",e.hotbot.checked&&(noEngine=!1,w&&(newWindow=window.open(a,"h","toolbar,location,directories,status,menubar,scrollbars,resizable=1"))),t="https://duckduckgo.com/?t=ffab&q="+l+"&col=WW&sv=IS&lk=noframes&nh=10",e.infoseek.checked&&(noEngine=!1,w&&(newWindow=window.open(t,"i","toolbar,location,directories,status,menubar,scrollbars,resizable=1"))),s="https://www.perplexity.ai/search?q="+l+"&matchmode=and&cat=perplexity&x=33&y=10",e.lycos.checked&&(noEngine=!1,w&&(newWindow=window.open(s,"l","toolbar,location,directories,status,menubar,scrollbars,resizable=1"))),r="https://searx.be/?q="+l,e.webcrawler.checked&&(noEngine=!1,w&&(newWindow=window.open(r,"w","toolbar,location,directories,status,menubar,scrollbars,resizable=1"))),i="https://you.com/search?q="+l,e.yahoo.checked&&(noEngine=!1,w&&(newWindow=window.open(i,"y","toolbar,location,directories,status,menubar,scrollbars,resizable=1"))),noEngine&&alert("Please select a search engine!")}function getPath(e){return lastSlash=e.lastIndexOf("/"),e.substring(0,lastSlash+1)}
 
 
 
@@ -283,12 +126,12 @@ This search page requires JavaScript to run. Please hit your <strong><i>BACK</i>
 </h2>
 -->
 
-<p><br /><div class="meniu">
-<ul><li><a href="https://cherubimq.github.io/github.io/" title="Back to cherubim Int'l"><strong>Cherubim Int'l</strong></a></li></ul></ul>
-  </div> </p>
+<br /><div class="meniu">
+<ul><li><a href="https://cherubimq.github.io/github.io/" title="Back to cherubim Int'l"><strong>Cherubim Int'l</strong></a></li></ul>
+  </div> 
 <div class="c">
 <form name="engines" onSubmit="netsearch(engines)" method="post">
-    <align="left"><p><strong>The AI Search Engine | AI Chat</strong>
+    <align="left"><p><strong>The AI Turbo Search Engine | AI Chat</strong>
 	<br />
         
     1.&nbsp; Enter keyword(s)
@@ -300,18 +143,7 @@ This search page requires JavaScript to run. Please hit your <strong><i>BACK</i>
 <!-- //    <input type="text" size="35" maxlength="200" name="TEXT" value="Enter Keywords Here" onClick="form.TEXT.select()">
 // -->
 <script>
-if (navigator.appName=="Netscape") {
-   document.write("")
-   document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + navigator.appName) 
-   document.write("<br />");
-   document.write("<input type='text' size='35' maxlength='200' name='TEXT' value='Enter Keywords Here' onFocus='form.TEXT.select()'>")
-   document.write("")
-   }
-else {
-   document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + navigator.appName);
-   document.write("<br />");
-   document.write("<input type='text' size='35' maxlength='200' name='TEXT' value='Enter Keywords Here' onClick='form.TEXT.select()'> ");
-    }
+"Netscape" == navigator.appName ? (document.write(""), document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + navigator.appName), document.write("<br />"), document.write("<input type='text' size='35' maxlength='200' name='TEXT' value='Enter Keywords Here' onFocus='form.TEXT.select()'>"), document.write("")) : (document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + navigator.appName), document.write("<br />"), document.write("<input type='text' size='35' maxlength='200' name='TEXT' value='Enter Keywords Here' onClick='form.TEXT.select()'> "));
 </script>
 
 <br />
